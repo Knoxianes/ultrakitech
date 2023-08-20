@@ -1,0 +1,61 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Jura:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,*::after,*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html::-webkit-scrollbar{
+  display: none;
+}
+html,body{
+  font-family: 'Heebo','Poppins', 'Jura', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 62.5%;
+  width: 100%;
+  scroll-behavior: smooth;  
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  color: #fff;
+}
+.filter{
+  background: transparent;
+  background: -webkit-repeating-linear-gradient(-45deg,transparent 10px, rgb(218, 110, 0)20%, transparent 70%);
+  background: repeating-linear-gradient(-45deg,transparent 10px, rgb(218, 110, 0)20%, transparent 70%);
+}
+.navgradient{
+  background: transparent;
+  background: -webkit-linear-gradient(180deg,#131313 90%, transparent);
+  background: linear-gradient(180deg,#131313 90%, transparent);
+}
+.word-spacing-1{
+  word-spacing: 1rem;
+  line-height: 1;
+}
+.word-spacing-2{
+  word-spacing: 0.2rem;
+  line-height: 1;
+}
+@media only screen and (min-width: 450px){
+  .customer-gradient{
+    background: transparent;
+    background: -webkit-linear-gradient(180deg,transparent,#da6e00, transparent );
+    background: linear-gradient(180deg,transparent ,#da6e00  , transparent );
+  }
+}
+.shadow-box{
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+.drop-shadow{
+  text-shadow: 0.5px 0.5px rgba(0,0,0,0.2);
+}
+
+.scrollbar::-webkit-scrollbar{
+  display:none;
+}
